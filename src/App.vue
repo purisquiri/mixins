@@ -10,11 +10,14 @@ import mixin from "@/mixin";
 export default {
   name: "App",
   mixins: [mixin],
-  // data() {
-  //   return {
-  //     offset: 0
-  //   };
-  // }
+  data() {
+    return {
+      offset: 0,
+    };
+  },
+  mounted() {
+    console.log("app mounted lifecycle function");
+  },
 };
 </script>
 
